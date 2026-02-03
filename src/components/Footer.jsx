@@ -6,7 +6,7 @@ const Footer = () => {
         <section className='footer-primary px-15 min-w-full p-2 flex flex-col md:flex-row md:justify-between items-center md:items-start gap-5'>
     
         <div className='gap-5 flex flex-col text-center md:text-start md:w-1/3 '>
-        <h1 className='text-2xl font-semibold '>Lilac Template</h1>
+        <h1 className='text-2xl primary-text font-semibold '>Lilac Template</h1>
         <address className='text-lg text-wrap '>
             123 Example Road
             Minneapolis, MN
@@ -41,8 +41,8 @@ const Footer = () => {
                 <li><a>Website Terms & Conditions</a></li>
                 <li><a>Disclaimer</a></li>
             </ul>
-            <p className='text-lg  pb-5'><span className='footer-text '>Website Template Credits:</span> <a className='underline'>Go Bloom Creative</a></p>
-            <p className='text-lg footer-text'>All Rights Reserved © 2024 Your Business Name Here, LLC. </p>
+            <p className='text-lg  pb-5'><span className='primary-text '>Website Template Credits:</span> <a className='underline'>Go Bloom Creative</a></p>
+            <p className='text-lg primary-text'>All Rights Reserved © 2024 Your Business Name Here, LLC. </p>
         </section>
     </footer>
   )

@@ -5,7 +5,7 @@
   --foreground: #171717;
   --footer-primary-bg: #FBF6F1;
   --footer-secondary-bg: #E5E0DA;
-  --footer-secondary-text: #223614;
+  --primary-text: #223614;
 }
 
 .footer-primary {
@@ -15,8 +15,8 @@
 .footer-secondary {
   background-color: var(--footer-secondary-bg);
 }
-.footer-text{
-  color:var(--footer-secondary-text)
+.primary-text{
+  color:var(--primary-text)
 }
 
 
