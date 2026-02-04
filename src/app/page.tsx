@@ -4,6 +4,7 @@ import MessageSection from "@/components/MessageSection";
 import SpecialtiesSection from "@/components/SpecialtiesSection";
 import ContactCard from "@/components/ContactCard";
 import ProfessionCard from "@/components/ProfessionCard";
+import WorkSection from "@/components/WorkSection"
 
 const page = () => {
   return (
@@ -25,6 +26,7 @@ const page = () => {
         button="get in touch"
       />
       <SpecialtiesSection />
+      <WorkSection />      
       <ProfessionCard />
       <ContactCard
         head="Get started today."

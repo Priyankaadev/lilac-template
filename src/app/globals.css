@@ -8,7 +8,12 @@
   --message-section-bg : #E5E0DA;
   --olive-bg: #7E7B46;
   --midBeige-bg :#E5E0DA;
+  --mildLilac-bg : #C2BFCB;
   
+}
+
+.worksection{
+  background-color: var(--mildLilac-bg);
 }
 .profession{
   background-color: var(--midBeige-bg);
