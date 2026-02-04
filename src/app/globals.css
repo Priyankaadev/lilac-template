@@ -4,11 +4,14 @@
   --background: #FBF6F1;
   --foreground: #171717;
   --footer-primary-bg: #FBF6F1;
-  --footer-secondary-bg: #E5E0DA;
   --primary-text: #223614;
   --message-section-bg : #E5E0DA;
   --olive-bg: #7E7B46;
+  --midBeige-bg :#E5E0DA;
   
+}
+.profession{
+  background-color: var(--midBeige-bg);
 }
 
 .contact{
@@ -19,7 +22,7 @@
  
 }
 .footer-secondary {
-  background-color: var(--footer-secondary-bg);
+  background-color: var(--midBeige-bg);
 }
 .primary-text{
   color:var(--primary-text)

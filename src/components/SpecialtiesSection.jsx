@@ -3,7 +3,7 @@ import SpecialityCard from '@/components/SpecialityCard'
 const SpecialtiesSection = () => {
   return (
     <section className="py-10 px-5 primary-text">
-        <h1 className="text-2xl text-center font-bold">My Specialties</h1>
+        <h1 className="text-3xl md:text-4xl text-center mb-6 mt-6 font-bold">My Specialties</h1>
 
         <div className='flex flex-col md:grid md:grid-cols-2 lg:grid-cols-3 gap-4'>
         <SpecialityCard head='Self-Esteem' 
