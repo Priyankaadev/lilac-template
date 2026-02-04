@@ -17,8 +17,8 @@ const Header = () => {
   }, [pathname]);
 
   return (
-    <header className="relative z-50">
-      <div className="flex items-center justify-between md:px-8 py-5 px-5">
+<header className="fixed top-0 left-0 w-full z-50 bg-[#FBF6F1]">
+      <div className="flex items-center justify-between md:px-8 py-6 px-8">
         <button
           aria-expanded={open}
           aria-label="Toggle navigation"
@@ -34,7 +34,10 @@ const Header = () => {
                 bg-current transition-all ease-in-out duration-300 ${open ? "-rotate-45 translate-y-0" : "translate-y-1.5 rotate-0"} `}
           />
         </button>
-        <Link href="/" className="text-lg font-semibold primary-text md:text-2xl">
+        <Link
+          href="/"
+          className="text-lg font-semibold primary-text md:text-2xl"
+        >
           Lilac Template
         </Link>
 
@@ -46,12 +49,12 @@ const Header = () => {
       </div>
       {/* Mobile view */}
       {open && (
-        <div className="fixed inset-0 bg-red-200 flex items-center justify-center md:hidden z-40">
+        <div className="fixed top-[60px] left-0 right-0 bottom-0 bg-[#FBF6F1] md:hidden z-40">
           <nav className="flex flex-col gap-10 text-5xl h-full items-center justify-center">
-            <Link href="./blog" onClick={() => setOpen(false)}>
+            <Link href="/blog" onClick={() => setOpen(false)}>
               Blog
             </Link>
-            <Link href="./contact" onClick={() => setOpen(false)}>
+            <Link href="/contact" onClick={() => setOpen(false)}>
               Contact
             </Link>
           </nav>

@@ -1,12 +1,15 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
+  --background: #FBF6F1;
   --foreground: #171717;
   --footer-primary-bg: #FBF6F1;
   --footer-secondary-bg: #E5E0DA;
   --primary-text: #223614;
+  --message-section-bg : #E5E0DA;
+  
 }
+
 
 .footer-primary {
   background-color: var(--footer-primary-bg);
@@ -17,6 +20,11 @@
 }
 .primary-text{
   color:var(--primary-text)
+}
+
+.message-section{
+  background-color: var(--message-section-bg);
+  color: var(--primary-text);
 }
 
 
