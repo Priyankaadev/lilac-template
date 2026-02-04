@@ -7,10 +7,13 @@
   --footer-secondary-bg: #E5E0DA;
   --primary-text: #223614;
   --message-section-bg : #E5E0DA;
+  --olive-bg: #7E7B46;
   
 }
 
-
+.contact{
+  background-color: var(--olive-bg);
+}
 .footer-primary {
   background-color: var(--footer-primary-bg);
  

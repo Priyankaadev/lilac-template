@@ -10,16 +10,19 @@ const SpecialtiesSection = () => {
         desc='Building a strong sense of self-worth is key to living a fulfilled life.
          Let us work together to bolster your self-esteem.'
          img='/selfesteemImg.webp'
+         alt="self-esteem "
          />
          <SpecialityCard head='Relationships'
          desc='Navigation relationships can be complex. I am here to
          guide you through these complexities to help you form healthier connections.'
          img='/relationImg.webp'
+         alt='relationship'
           />
          <SpecialityCard head='Burnout'
          desc='Feeling overwhelmed by your career is more common than you think.
          Together, we will identify strategies to manage and prevent burnout.'
          img='/burnoutImg.webp'
+         alt='burn out'
           />
          </div>
     </section>

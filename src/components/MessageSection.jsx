@@ -1,12 +1,12 @@
 import Image from "next/image"
 import { HiArrowLongRight } from "react-icons/hi2"
 
-const MessageSection = ({src, head, p1,p2, button}) => {
+const MessageSection = ({src, head, p1,p2, button, alt}) => {
   return (
     <section className="mt-6 md:flex-row-reverse md:flex message-section ">
       
        <div className="relative w-full h-72 md:h-100"> 
-        <Image src={src} className="object-cover" fill />
+        <Image src={src} className="object-cover" fill alt={alt}/>
         </div>
        
         <div className="flex  flex-col gap-2 md:justify-center md:flex ">
