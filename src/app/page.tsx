@@ -5,6 +5,8 @@ import SpecialtiesSection from "@/components/SpecialtiesSection";
 import ContactCard from "@/components/ContactCard";
 import ProfessionCard from "@/components/ProfessionCard";
 import WorkSection from "@/components/WorkSection"
+import About from "@/components/About"
+import FAQSection from "@/components/FAQSection"
 
 const page = () => {
   return (
@@ -26,7 +28,9 @@ const page = () => {
         button="get in touch"
       />
       <SpecialtiesSection />
-      <WorkSection />      
+      <WorkSection />   
+      <About />  
+      <FAQSection /> 
       <ProfessionCard />
       <ContactCard
         head="Get started today."

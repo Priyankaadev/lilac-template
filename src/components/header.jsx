@@ -8,17 +8,13 @@ const Header = () => {
   const [open, setOpen] = useState(false);
   const pathname = usePathname();
 
-  //    useEffect(() => {
-  //   document.body.style.overflow = open ? "hidden" : "auto";
-  // }, [open]);
-
   useEffect(() => {
     setOpen(false);
   }, [pathname]);
 
   return (
 <header className="fixed top-0 left-0 w-full z-50 bg-[#FBF6F1]">
-      <div className="flex items-center justify-between md:px-8 py-6 px-8">
+      <div className="flex items-center justify-between md:px-8 py-5 px-8">
         <button
           aria-expanded={open}
           aria-label="Toggle navigation"
@@ -37,6 +33,7 @@ const Header = () => {
         <Link
           href="/"
           className="text-lg font-semibold primary-text md:text-2xl"
+          
         >
           Lilac Template
         </Link>

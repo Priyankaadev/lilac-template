@@ -4,7 +4,7 @@ import Image from "next/image";
 
 const HeroCard = ({src,alt}) => {
   return (
-    <div className="w-full flex items-center md:w-1/2 justify-center md:justify-start p-10 mt-15">
+    <div className="w-full flex items-center md:w-1/2 justify-center md:justify-start p-10 mt-10">
     <Image 
     src={src}
     width={200}
