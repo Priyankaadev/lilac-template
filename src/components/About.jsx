@@ -8,7 +8,7 @@ const About = () => {
       
       <div className="relative inline-block md:flex md:items-center md:justify-center md:w-1/2">  
 
-        <Image src='/girlwithflower.webp' width={150} height={300} className=" md:w-[200px] rounded-t-full mt-5 mb-5"/>
+        <Image src='/girlwithflower.webp' width={150} height={300} className=" md:w-[200px] rounded-t-full mt-5 mb-5" alt="girl with flower"/>
 
         <div className="absolute bottom-2 -right-8 md:right-10 md:bottom-5 h-20 w-20 md:w-30 md:h-30 lg:right-25 xl:right-45">
           <Image

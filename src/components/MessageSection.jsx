@@ -1,7 +1,11 @@
+'use client'
 import Image from "next/image"
+import { useRouter } from "next/navigation"
 import { HiArrowLongRight } from "react-icons/hi2"
 
 const MessageSection = ({src, head, p1,p2, button, alt}) => {
+ 
+ const router  = useRouter()
   return (
     <section className="mt-6 md:flex-row-reverse md:flex message-section ">
       
@@ -13,7 +17,8 @@ const MessageSection = ({src, head, p1,p2, button, alt}) => {
         <h1 className="font-semibold text-2xl px-6 mt-8">{head}</h1>
         <p className="mt-3 text-lg px-6">{p1}</p>
         <p className="mb-2 text-lg px-6">{p2}</p>
-        <button className="flex border-t w-full uppercase gap-2 p-2 mt-15 justify-center">
+        <button  onClick={()=> router.push("/contact")}
+        className="flex border-t hover:bg-[#405032] hover:text-white w-full uppercase gap-2 p-2 mt-15 justify-center">
          {button} <HiArrowLongRight size={25}/> 
         </button>
         </div>

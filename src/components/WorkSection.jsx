@@ -1,7 +1,10 @@
+'use client'
 import Image from "next/image"
+import { useRouter } from "next/navigation"
 import { HiArrowLongRight } from "react-icons/hi2"
 
 const WorkSection = () => {
+  const router = useRouter()
   return (
     <section className="mt-6 md:flex-row md:flex worksection  items-stretch">
       
@@ -24,7 +27,8 @@ const WorkSection = () => {
         </ul>
         <p className="mb-2 text-lg px-6">With empathy and guidance, 
             we'll work together to navigate the challenges life throws your way.</p>
-        <button className="flex border-t w-full uppercase gap-2 p-2 mt-15 md:mt-8 justify-center hover:text-white hover:bg-[#223614]">
+        <button onClick={()=>router.push('/contact')}
+         className="flex border-t w-full uppercase gap-2 p-2 mt-15 md:mt-8 justify-center hover:text-white hover:bg-[#223614]">
          work with me <HiArrowLongRight size={25}/> 
         </button>
         </div>
