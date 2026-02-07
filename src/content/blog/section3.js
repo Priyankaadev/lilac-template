@@ -1,18 +1,36 @@
 'use client';
 
-import { useState } from "react";
+import { useState } from 'react';
+import { motion } from 'framer-motion';
 
 const Section3 = () => {
   const [message, setMessage] = useState(false);
 
+  const item = {
+    hidden: { opacity: 0, y: 30 },
+    visible: { opacity: 1, y: 0, transition: { duration: 0.7, ease: 'easeOut' } },
+  };
+
   return (
-    <div className="bg-[#3E5C59] text-[#F5F7F6] w-full min-h-96 p-8 flex items-center justify-center">
+    <motion.div
+      className="bg-[var(--olive-bg)] text-[var(--foreground)] w-full min-h-96 p-8 flex items-center justify-center"
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ once: true, amount: 0.3 }}
+      variants={item}
+    >
       {message ? (
-        <p className="border border-[#7FA3A0] max-w-md w-full p-8 flex flex-col items-center justify-center gap-3">
-          Thankyou!
-        </p>
+        <motion.p
+          className="border border-[#7FA3A0] max-w-md w-full p-8 flex flex-col items-center justify-center gap-3"
+          variants={item}
+        >
+          Thank you!
+        </motion.p>
       ) : (
-        <div className="border border-[#7FA3A0] max-w-md w-full p-8 flex flex-col items-center justify-center gap-3">
+        <motion.div
+          className="border border-[#7FA3A0] max-w-md w-full p-8 flex flex-col items-center justify-center gap-3"
+          variants={item}
+        >
           <h1 className="font-bold text-xl text-[#F5F7F6]">Subscribe</h1>
 
           <p className="text-center text-[#DCE6E4]">
@@ -33,10 +51,10 @@ const Section3 = () => {
             </button>
           </div>
 
-          <p className="text-sm">We respect your privacy.</p>
-        </div>
+          <p className="text-sm text-white">We respect your privacy.</p>
+        </motion.div>
       )}
-    </div>
+    </motion.div>
   );
 };
 

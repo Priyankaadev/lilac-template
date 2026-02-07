@@ -6,7 +6,7 @@ import Section3 from '../../content/blog/section3'
 
 const page = () => {
   return (
-    <div className="  ">
+    <div className=" ">
     <Section1 />
     <Section2 />
     <Section3 />

@@ -7,7 +7,7 @@ const page = () => {
       <h1 className="text-3xl md:text-4xl font-bold text-center mb-6">About Dr. Maya Reynolds, PsyD</h1>
 
       <div className="flex flex-col md:flex-row gap-6 items-center md:items-start">
-        <div className="relative w-full md:w-1/3 h-96 md:h-96 ">
+        <div className="relative  w-56 md:w-1/3 h-96 md:h-96 ">
           <Image 
             src='/Dr. Maya Reynolds.png' 
             fill 
@@ -37,9 +37,7 @@ const page = () => {
             In addition to trauma and anxiety, I frequently support clients dealing with professional burnout, perfectionism, and high internal pressure. Many are entrepreneurs, creatives, or professionals who feel disconnected from themselves after years of pushing through stress. Therapy can become a space to slow down, reconnect, and develop more sustainable ways of living and working.
           </p>
 
-          <p>
-            I offer both in-person therapy from my Santa Monica office and secure telehealth sessions for clients located in California. My office is a quiet, private space designed to feel calm and grounding, with natural light and a comfortable, uncluttered environment.
-          </p>
+         
 
           <p>
             I believe therapy works best when clients feel respected, understood, and actively involved in the process. My goal is not just symptom relief, but helping clients develop insight, resilience, and a stronger relationship with themselves over time. 
