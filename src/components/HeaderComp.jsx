@@ -4,7 +4,7 @@ import Link from "next/link";
 import { useEffect, useState } from "react";
 import { usePathname } from "next/navigation";
 
-const Header = () => {
+const HeaderComp = () => {
   const [open, setOpen] = useState(false);
   const pathname = usePathname();
 
@@ -64,4 +64,4 @@ const Header = () => {
   );
 };
 
-export default Header;
+export default HeaderComp;
