@@ -13,7 +13,7 @@ const Header = () => {
   }, [pathname]);
 
   return (
-<header className="fixed top-0 left-0 w-full z-50 bg-[#F4F7F8] text-[#2C3E44]">
+<div className="fixed top-0 left-0 w-full z-50 bg-[#F4F7F8] text-[#2C3E44]">
       <div className="flex items-center justify-between md:px-8 py-5 px-8">
         <button
           aria-expanded={open}
@@ -38,16 +38,15 @@ const Header = () => {
           Dr. Maya Reynolds, PsyD
         </Link>
 
-        {/* Desktop nav */}
         <nav className="hidden md:flex md:text-xl  gap-8 text-md">
           <Link href="/blog"> Blog</Link>
           <Link href="/about"> About</Link>
           <Link href="/contact"> Contact</Link>
         </nav>
       </div>
-      {/* Mobile view */}
+      
       {open && (
-        <div className="fixed top-[60px] left-0 right-0 bottom-0 bg-[#F4F7F8] text-[#2C3E44] md:hidden z-40">
+        <div className="fixed top-15 left-0 right-0 bottom-0 bg-[#F4F7F8] text-[#2C3E44] md:hidden z-40">
           <nav className="flex flex-col gap-10 text-2xl lg:text-4xl h-full items-center justify-center">
             <Link href="/blog" onClick={() => setOpen(false)}>
               Blog
@@ -61,7 +60,7 @@ const Header = () => {
           </nav>
         </div>
       )}
-    </header>
+    </div>
   );
 };
 
