@@ -29,7 +29,7 @@ const Accordion = ({ ques, ans }) => {
 
         <div
           className={`overflow-hidden transition-all duration-300 ${
-            open ? "max-h-40" : "max-h-0"
+            open ? "max-h-60" : "max-h-0"
           }`}
         >
           <p className="pb-5 px-5">{ans}</p>

@@ -10,7 +10,7 @@ const Accordion = ({ ques, ans }) => {
         <div className="w-full max-w-lg border-y">
         <button
           onClick={() => setOpen(!open)}
-          className="flex w-full items-center gap-3  py-4 "
+          className="flex w-full items-center gap-3  py-2"
         >
             <span className="relative w-4 h-4 shrink-0">
 
@@ -30,7 +30,7 @@ const Accordion = ({ ques, ans }) => {
 
         <div
           className={`overflow-hidden transition-all duration-300 ${
-            open ? "max-h-40" : "max-h-0"
+            open ? "max-h-70" : "max-h-0"
           }`}
         >
           <p className="pb-5 px-5 xl:text-xl">{ans}</p>

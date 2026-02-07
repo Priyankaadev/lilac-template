@@ -12,20 +12,24 @@ const page = () => {
   return (
     <>
       <div className=" md:flex md:items-center ">
-        <HeroCard src="/HomeImage.webp" alt="lady holding flower " />
+        <HeroCard src="/HeroImg.jpg"  alt="lady holding coffee cup " />
         <HeroSection
-          heading="Live your life in full bloom"
-          info="Therapy for Adults in Minneapolis, MN."
-          button="CONNECT WITH ME"
+          heading="Feeling Overwhelmed, Stressed, or Stuck?"
+          info="I’m Dr. Maya Reynolds, a licensed clinical psychologist in Santa Monica. I help high-achieving adults struggling with anxiety,
+           burnout, or the lingering effects of past experiences reconnect with themselves, develop resilience, and find calm in their daily lives."
+          button="Schedule Your Session"
         />
       </div>
       <MessageSection
-        src="/section1.webp"
-        head="Live a fulfilling life. "
-        alt="diary image"
-        p1="Life can be challenging - especially when you are trying to balance your personal and professional life."
-        p2="It is easy to feel like you are alone in facing these challenges, but I want you to know that I am here to help."
-        button="get in touch"
+        src="/office1.jpeg"
+        head="A Warm, Collaborative Approach to Therapy. "
+        alt="Dr. Maya Reynolds therapy office in Santa Monica"
+        p1="I work with adults who feel high internal pressure, chronic stress, or the lingering impact
+         of past experiences. Many of my clients are high-achievers who seem 'functional' on the outside, but internally 
+         struggle with anxiety, tension, or burnout."
+        p2="Through evidence-based methods like cognitive-behavioral therapy (CBT), EMDR, mindfulness, and body-oriented
+         techniques, I help clients understand both the emotional and physical aspects of what they're experiencing, supporting lasting growth and resilience."
+        button="Know more"
       />
       <SpecialtiesSection />
       <WorkSection />   
@@ -33,11 +37,10 @@ const page = () => {
       <FAQSection /> 
       <ProfessionCard />
       <ContactCard
-        head="Get started today."
+        head="Take the first step toward support."
         btn="get in touch"
-        desc="Ready to take the first step towards a happier, healthier you?
-         Contact me to book your first session. I look forward to starting this therapeutic journey with you. "
-      />
+        desc="If you’re feeling overwhelmed by anxiety, stress, burnout, or the lingering effects of past experiences, I’m here to help. Reach out to schedule your first session, whether in-person in Santa Monica or via secure telehealth. Let's start this journey together toward insight, resilience, and a stronger relationship with yourself."
+         />
       
      
     </>

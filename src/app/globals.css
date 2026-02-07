@@ -1,43 +1,47 @@
 @import "tailwindcss";
 
 :root {
-  --background: #FBF6F1;
-  --foreground: #171717;
-  --footer-primary-bg: #FBF6F1;
-  --primary-text: #223614;
-  --message-section-bg : #E5E0DA;
-  --olive-bg: #7E7B46;
-  --midBeige-bg :#E5E0DA;
-  --mildLilac-bg : #C2BFCB;
-  
+  --background: #F4F7F8;          
+  --foreground: #1F2933;          
+
+  --footer-primary-bg: #E9EEF1;   
+
+  --primary-text: #2C3E44;        
+
+  --message-section-bg: #E1EBEF;  
+  --olive-bg: #3E5C59;            
+  --midBeige-bg: #EDF1F3;        
+  --mildLilac-bg: #D6DEE5;       
 }
 
-.worksection{
+.worksection {
   background-color: var(--mildLilac-bg);
 }
-.profession{
+
+.profession {
   background-color: var(--midBeige-bg);
 }
 
-.contact{
+.contact {
   background-color: var(--olive-bg);
 }
+
 .footer-primary {
   background-color: var(--footer-primary-bg);
- 
 }
+
 .footer-secondary {
   background-color: var(--midBeige-bg);
 }
-.primary-text{
-  color:var(--primary-text)
-}
 
-.message-section{
-  background-color: var(--message-section-bg);
+.primary-text {
   color: var(--primary-text);
 }
 
+.message-section {
+  background-color: var(--message-section-bg);
+  color: var(--primary-text);
+}
 
 body {
   background: var(--background);
