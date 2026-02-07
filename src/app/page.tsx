@@ -12,7 +12,7 @@ const page = () => {
   return (
     <>
       <div className=" md:flex md:items-center ">
-        <HeroCard src="/HeroImg.jpg"  alt="lady holding coffee cup " />
+        <HeroCard src="/heroImg.jpg"  alt="lady holding coffee cup " />
         <HeroSection
           heading="Feeling Overwhelmed, Stressed, or Stuck?"
           info="I’m Dr. Maya Reynolds, a licensed clinical psychologist in Santa Monica. I help high-achieving adults struggling with anxiety,
