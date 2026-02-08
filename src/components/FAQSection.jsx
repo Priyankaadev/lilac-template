@@ -3,11 +3,19 @@
 import Image from 'next/image'
 import Accordion2 from './Accordion2'
 import { motion } from 'framer-motion'
+import { useState } from 'react'
 
 const FAQSection = () => {
-  return (
-    <section className='flex flex-col md:flex md:flex-row'>
+  const [openIndex, setOpenIndex] = useState(null)
 
+  const handleToggle = (index) => {
+    setOpenIndex(prev => (prev === index ? null : index))
+  }
+
+  return (
+    <section className='flex flex-col md:flex-row'>
+
+      
       <motion.div
         initial={{ opacity: 0, y: 40 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -24,6 +32,7 @@ const FAQSection = () => {
         />
       </motion.div>
 
+      
       <motion.div
         className='p-5 md:w-1/2 md:py-10 md:flex md:flex-col md:justify-center'
         initial="hidden"
@@ -31,9 +40,7 @@ const FAQSection = () => {
         viewport={{ once: true }}
         variants={{
           hidden: {},
-          visible: {
-            transition: { staggerChildren: 0.15 }
-          }
+          visible: { transition: { staggerChildren: 0.15 } }
         }}
       >
         <motion.h1
@@ -47,38 +54,31 @@ const FAQSection = () => {
           FAQs
         </motion.h1>
 
-        <motion.div
-          variants={{ hidden: { opacity: 0, y: 30 }, visible: { opacity: 1, y: 0 } }}
-          transition={{ duration: 0.5 }}
-        >
-          <Accordion2
-            ques='Do you offer therapy for anxiety and stress?'
-            ans='Yes. I work with adults who feel overwhelmed by anxiety, stress, overthinking, or the lingering effects of past experiences. Sessions combine practical tools with depth-oriented approaches to help you feel more regulated and grounded.'
-          />
-        </motion.div>
+        <Accordion2
+          index={0}
+          isOpen={openIndex === 0}
+          onToggle={handleToggle}
+          ques='Do you offer therapy for anxiety and stress?'
+          ans='Yes. I work with adults who feel overwhelmed by anxiety, stress, overthinking...'
+        />
 
-        <motion.div
-          variants={{ hidden: { opacity: 0, y: 30 }, visible: { opacity: 1, y: 0 } }}
-          transition={{ duration: 0.5 }}
-        >
-          <Accordion2
-            ques='Do you work with clients experiencing trauma?'
-            ans='Absolutely. I work with adults who have experienced single-incident trauma as well as long-standing patterns from childhood, relationships, or chronic stress. My approach emphasizes safety, stabilization, and careful pacing.'
-          />
-        </motion.div>
+        <Accordion2
+          index={1}
+          isOpen={openIndex === 1}
+          onToggle={handleToggle}
+          ques='Do you work with clients experiencing trauma?'
+          ans='Absolutely. I work with adults who have experienced single-incident trauma...'
+        />
 
-        <motion.div
-          variants={{ hidden: { opacity: 0, y: 30 }, visible: { opacity: 1, y: 0 } }}
-          transition={{ duration: 0.5 }}
-        >
-          <Accordion2
-            ques='Do you offer in-person and telehealth sessions?'
-            ans='I offer both in-person therapy at my Santa Monica office and secure telehealth sessions for clients located in California.'
-          />
-        </motion.div>
+        <Accordion2
+          index={2}
+          isOpen={openIndex === 2}
+          onToggle={handleToggle}
+          ques='Do you offer in-person and telehealth sessions?'
+          ans='I offer both in-person therapy and secure telehealth sessions...'
+        />
 
       </motion.div>
-
     </section>
   )
 }
