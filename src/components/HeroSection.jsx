@@ -45,7 +45,7 @@ const HeroSection = ({ heading, info, button }) => {
 
       <motion.button
         variants={item}
-        onClick={() => router.push("/")}
+        onClick={() => router.push("/contact")}
         className="border px-4 py-2 w-fit mb-5 hover:bg-[#223614] hover:text-white"
       >
         <span className="text-center flex flex-row items-center justify-center gap-2">

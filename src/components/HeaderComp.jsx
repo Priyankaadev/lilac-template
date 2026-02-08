@@ -7,6 +7,8 @@ import { usePathname } from "next/navigation";
 const HeaderComp = () => {
   const [open, setOpen] = useState(false);
   const pathname = usePathname();
+  const isActive = (href) => pathname === href;
+
 
   useEffect(() => {
     setOpen(false);
@@ -38,11 +40,35 @@ const HeaderComp = () => {
           Dr. Maya Reynolds, PsyD
         </Link>
 
-        <nav className="hidden md:flex md:text-xl  gap-8 text-md">
-          <Link href="/blog"> Blog</Link>
-          <Link href="/about"> About</Link>
-          <Link href="/contact"> Contact</Link>
-        </nav>
+       <nav className="hidden md:flex md:text-xl gap-8 text-md">
+  <Link
+    href="/blog"
+    className={`relative pb-1 ${
+      isActive("/blog") ? "after:scale-x-100" : "after:scale-x-0"
+    } after:absolute after:left-0 after:-bottom-1 after:h-[2px] after:w-full after:bg-current after:transition-transform after:duration-300 after:origin-left`}
+  >
+    Blog
+  </Link>
+
+  <Link
+    href="/about"
+    className={`relative pb-1 ${
+      isActive("/about") ? "after:scale-x-100" : "after:scale-x-0"
+    } after:absolute after:left-0 after:-bottom-1 after:h-[2px] after:w-full after:bg-current after:transition-transform after:duration-300 after:origin-left`}
+  >
+    About
+  </Link>
+
+  <Link
+    href="/contact"
+    className={`relative pb-1 ${
+      isActive("/contact") ? "after:scale-x-100" : "after:scale-x-0"
+    } after:absolute after:left-0 after:-bottom-1 after:h-[2px] after:w-full after:bg-current after:transition-transform after:duration-300 after:origin-left`}
+  >
+    Contact
+  </Link>
+</nav>
+
       </div>
       
       {open && (
