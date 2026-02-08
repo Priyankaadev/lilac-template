@@ -67,6 +67,14 @@ const HeaderComp = () => {
   >
     Contact
   </Link>
+  <Link
+    href="/office"
+    className={`relative pb-1 ${
+      isActive("/office") ? "after:scale-x-100" : "after:scale-x-0"
+    } after:absolute after:left-0 after:-bottom-1 after:h-[2px] after:w-full after:bg-current after:transition-transform after:duration-300 after:origin-left`}
+  >
+    Our Office
+  </Link>
 </nav>
 
       </div>
@@ -82,6 +90,9 @@ const HeaderComp = () => {
             </Link>
             <Link href="/contact" onClick={() => setOpen(false)}>
               Contact
+            </Link>
+            <Link href="/office" onClick={() => setOpen(false)}>
+              Office
             </Link>
           </nav>
         </div>

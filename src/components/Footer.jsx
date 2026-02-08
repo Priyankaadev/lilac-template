@@ -1,7 +1,5 @@
 'use client'
 
-
-import React from 'react'
 import { motion } from 'framer-motion'
 
 const item = {
@@ -48,6 +46,7 @@ const Footer = () => {
               <motion.li variants={item} transition={{ delay: 0.5 }}><a href="/about">About</a></motion.li>
               <motion.li variants={item} transition={{ delay: 0.6 }}><a href="/contact">Contact</a></motion.li>
               <motion.li variants={item} transition={{ delay: 0.7 }}><a href="/blog">Blog</a></motion.li>
+              <motion.li variants={item} transition={{ delay: 0.7 }}><a href="/office">Our office</a></motion.li>
             </ul>
           </motion.div>
         </motion.div>
